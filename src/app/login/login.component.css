@@ -1,0 +1,71 @@
+
+:root{
+  --font-primary: var(font-family: "Montserrat", sans-serif);
+  --bgcolor: #f2f2f2
+}
+body {
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    
+  }
+  .login-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 31);
+    width: 300px;
+    text-align: center;
+  }
+  .login-container h1{
+    font: var(--font-primary);
+    font-size: 2.5rem;
+  }
+  .login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  .input-field {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .btn {
+    
+    padding: 10px;
+    background-color: #459448;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .btn:hover {
+    background-color: #51c557;
+  }
+  .links-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    font-size: 14px;
+    
+  }
+ 
+  .links-container a{
+    font-size: 0.9rem;
+    color: rgb(39, 135, 167);
+    text-decoration: var(--bgcolor);
+  }
+  .links-container:hover {
+    text-decoration: underline;
+  }
