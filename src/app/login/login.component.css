@@ -1,10 +1,16 @@
 
 :root{
   --font-primary: var(font-family: "Montserrat", sans-serif);
-  --bgcolor: #f2f2f2
+  --bgcolor:var(rgba(235, 235, 235, 0.929));
 }
 body {
-    
+    background-image: url(fundo.png);
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -12,18 +18,55 @@ body {
     
   }
   .login-container {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 31);
+    background-color: transparent;
+    position: relative;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px 5px rgba(39, 39, 39, 0.594);
+    height: 400px;
     width: 300px;
+    background-color: rgba(0, 0, 0, 0.502);
     text-align: center;
   }
-  .login-container h1{
+  .login-container::before {
+    background-image:url('fundo.png');
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    filter: blur(3px);
+    z-index:-1; 
+    border-radius: 30px; 
+    border: none;
+  }
+  .login-container::after {
+      content: '';
+      position: absolute;
+      top: -20px; 
+      left: -20px;
+      width: calc(100% + 20px); 
+      height: calc(100% + 40px); 
+      z-index: -1;       
+  }
+  
+  
+  
+  .login-container h1 {
+    color: rgb(235, 235, 235, 0.929);
     font: var(--font-primary);
     font-size: 2.5rem;
+    position: relative; 
+    z-index: 1;
   }
+  p {
+    color: rgba(255, 255, 255, 0.797);
+  }
+  
   .login-container h2 {
+    color: rgb(235, 235, 235, 0.929);
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
@@ -40,13 +83,13 @@ body {
     font-size: 16px;
   }
   .btn {
-    
-    padding: 10px;
+    margin-top: 30px;
+    padding: 16px;
     background-color: #459448;
     color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 15px;
+    font-size: 20px;
     cursor: pointer;
     transition-duration: 0.4s;
   }
@@ -58,7 +101,7 @@ body {
     justify-content: space-between; 
     width: 100%; 
     font-size: 14px;
-    
+    padding-top:4px;
   }
  
   .links-container a{
@@ -66,6 +109,4 @@ body {
     color: rgb(39, 135, 167);
     text-decoration: var(--bgcolor);
   }
-  .links-container:hover {
-    text-decoration: underline;
-  }
+  
