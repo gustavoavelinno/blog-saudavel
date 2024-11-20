@@ -1,0 +1,76 @@
+:root{
+    --font-primary: "Montserrat", sans-serif;
+    --bgcolor: rgba(235, 235, 235, 0.929);
+  }
+  body {
+      background-image: url(fundo.png);
+      display: block;
+      margin: 0 auto;
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      background-position: center; 
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 5rem;
+  }
+  .login-container {
+      position: relative;
+      padding: 40px;
+      border-radius: 30px;
+      height: 500px; /* Aumentei a altura para acomodar mais campos */
+      width: 350px; /* Aumentei a largura para mais conforto */
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      backdrop-filter: blur(3px);
+  }
+  .login-container h1 {
+      color: rgba(255, 251, 251, 0.929);
+      font: var(--font-primary);
+      font-size: 2.5rem;
+      position: relative;
+      z-index: 1;
+  }
+  p {
+      color: rgba(255, 255, 255, 0.797);
+  }
+  .form {
+      display: flex;
+      flex-direction: column;
+  }
+  .input-field {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      font-size: 16px;
+  }
+  .btn {
+      margin-top: 30px;
+      padding: 16px;
+      background-color: #030303be;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+  }
+  .btn:hover {
+      background-color: #e1e1e1;
+      color: #333;
+  }
+  .links-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 14px;
+      padding-top: 4px;
+  }
+  .links-container p,a {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.817);
+      text-decoration: var(--bgcolor);
+  }
+  

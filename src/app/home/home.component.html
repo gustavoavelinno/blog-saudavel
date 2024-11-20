@@ -1,0 +1,47 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+    <div class="centralizado">
+        <h1 class="titulo">Coma bem,<br>viva melhor</h1>
+    </div>
+
+    <div class="botao-container">
+        <a href="/login" class="botao">
+            faça seu login <span class="seta">→</span>
+        </a>
+    </div>
+
+    <div class="menu-container">
+        <div class="center-links">
+            <a href="#">Receitas</a>
+            <a href="#">Artigos</a>
+            <a href="#">Contato</a>
+        </div>
+
+        <div class="menu-icon" id="menuIcon" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div> 
+
+    <div class="container">
+
+        <div class="menu" id="menu">
+            <div class="logo">LOGO</div>
+            <ul>
+                <li><a href="conta.html">Minha conta</a></li>
+                <li><span>Meus favoritos</span></li>
+                <li><span>Salvos</span></li>
+                <li><span>Notificações</span></li>
+            </ul>
+            <button class="logout">
+                Sair <span>←</span>
+            </button>
+        </div>
+
+        <div class="overlay" id="overlay" (click)="closeMenu()"></div>
+    </div>
+    <a href="/perfil">Perfil</a>
+</body>
