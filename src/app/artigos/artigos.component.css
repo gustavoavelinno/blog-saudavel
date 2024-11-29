@@ -1,0 +1,133 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(92, 92, 92);
+}
+.menu-container {
+   
+    padding: 15px ;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+.center-links {
+    
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    gap: 30px;
+   
+}
+
+.center-links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.center-links a:hover {
+    color: #ddd;
+}
+/* Seção 1: Banner */
+.banner {
+    position: relative;
+    height: 700px; /* Altura ajustada para ser mais "comprida" */
+    width: 100%; /* A largura ocupa toda a tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-image {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('teste.jpg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Aplica o efeito de desfoque apenas à imagem */
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+.banner-image::before{
+    background-color: rgba(0, 0, 0, 4.5);
+   
+}
+
+.banner-text {
+    position: relative; /* Agora o texto está sobre a imagem */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text h1 {
+    font-size: 66px;
+    margin: 0 0 10px 0;
+}
+
+.banner-text p {
+    font-size: 38px;
+    margin: 0;
+}
+
+/* Seção 2: Artigos */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.article-card {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cor vermelha para os cards padrão */
+.article-card.red {
+    background-color: #a1ab2d;
+    color: #fff;
+}
+
+.article-card.green {
+    background-color: #69996b;
+    color: #fff;
+}
+
+.article-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    font-size: 14px;
+    margin: 0;
+}

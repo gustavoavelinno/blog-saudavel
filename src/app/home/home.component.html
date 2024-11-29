@@ -1,7 +1,4 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<body>
+<div class="body">
     <div class="centralizado">
         <h1 class="titulo">Coma bem,<br>viva melhor</h1>
     </div>
@@ -14,11 +11,12 @@
 
     <div class="menu-container">
         <div class="center-links">
-            <a href="#">Receitas</a>
-            <a href="#">Artigos</a>
-            <a href="#">Contato</a>
+            <a href="/receita">Receitas</a>
+            <a href="/artigos">Artigos</a>
+            <a href="/contato">Contato</a>
         </div>
 
+        <!-- Ícone do menu que aciona a abertura do menu lateral -->
         <div class="menu-icon" id="menuIcon" (click)="toggleMenu()">
             <span></span>
             <span></span>
@@ -27,11 +25,11 @@
     </div> 
 
     <div class="container">
-
+        <!-- Menu lateral (que ficará oculto até ser acionado) -->
         <div class="menu" id="menu">
-            <div class="logo">LOGO</div>
+            <div class="logo" (click)="toggleMenu()">LOGO</div>
             <ul>
-                <li><a href="conta.html">Minha conta</a></li>
+                <a href="/perfil"><li>Minha conta</li></a>
                 <li><span>Meus favoritos</span></li>
                 <li><span>Salvos</span></li>
                 <li><span>Notificações</span></li>
@@ -41,7 +39,9 @@
             </button>
         </div>
 
-        <div class="overlay" id="overlay" (click)="closeMenu()"></div>
+        <!-- Overlay para cobrir o restante da tela quando o menu estiver aberto -->
+        <div class="overlay" id="overlay"></div>
     </div>
+
     <a href="/perfil">Perfil</a>
-</body>
+</div>

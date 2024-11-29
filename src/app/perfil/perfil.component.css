@@ -22,6 +22,7 @@ body {
 }
 
 .profile-pic {
+    background-image: url(fundoPerfil.png);
     display: flex;
     justify-content: center;
     align-items: center;
