@@ -176,7 +176,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    
 }
 
 .overlay.active {
@@ -186,7 +186,8 @@
 
 .menu.active {
     right: 0;
-    transition: left 0.3s ease;
+    transition: right 0.3s ease-in-out;
+
 }
 
 .overlay.active {

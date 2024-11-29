@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './contato.component.css'
 })
 export class ContatoComponent {
-
+  enviarmensagem(){
+    alert("mensagem enviada!")
+  }
 }

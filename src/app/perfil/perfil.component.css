@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+.body {
     background-color: #f0f0f0;
     height: 100vh;
     display: flex;

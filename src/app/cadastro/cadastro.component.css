@@ -2,10 +2,11 @@
     --font-primary: "Montserrat", sans-serif;
     --bgcolor: rgba(235, 235, 235, 0.929);
   }
-  body {
+  .body {
       background-image: url(fundo.png);
       display: block;
-      margin: 0 auto;
+      height: 75.9vh;
+      margin: 0 ;
       background-repeat: no-repeat; 
       background-size: cover; 
       background-position: center; 
@@ -13,7 +14,8 @@
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
-      padding: 5rem;
+      padding: 5rem
+
   }
   .login-container {
       position: relative;

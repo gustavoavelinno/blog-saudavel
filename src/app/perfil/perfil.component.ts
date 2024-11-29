@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class PerfilComponent {
   minhaFuncao() {
-    console.log('Botão clicado!');
-    alert('Função chamada!');
+    
+    alert('Dados Atualizados!');
   }
 }
 

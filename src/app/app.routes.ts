@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ArtigosComponent } from './artigos/artigos.component';
 import { ContatoComponent } from './contato/contato.component';
+import { ReceitasComponent } from './receitas/receitas.component';
+import { ListaComponent } from './lista/lista.component';
 
 export const routes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -14,6 +16,8 @@ export const routes: Routes = [
     { path: 'perfil', component: PerfilComponent},
     { path: 'artigos', component: ArtigosComponent},
     { path: 'contato', component: ContatoComponent},
+    { path: 'receitas', component: ReceitasComponent},
+    { path: 'lista', component: ListaComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     
 ];
